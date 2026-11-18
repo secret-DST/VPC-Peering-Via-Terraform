@@ -68,7 +68,7 @@ VPCs, which constitutes to minimal latency. For businesses that utilise less tha
 This also use to be the exclusive method of enabling communication between VPCs. 
 
 VPC routing is also Cost-Effective, compared to alternatives like transit gateway. However, the setup can quickly become difficult to maintain and scale.
-It has a mesh like topology, which requires individual connections for each VPC connection. For example, if you have 4 VPCs, you will have to configure a connection between VPC 1 --> VPC 2 --> VPC 3 --> VPC 4 THEN CONNCECT VPC 4 --> VPC 1 AND VPC 3 AND VPC 2 --> 4. So in total there will be 6 peering
+It has a mesh like topology, which requires individual connections for each VPC connection. For example, if you have 4 VPCs, you will have to configure a connection between VPC 1 --> VPC 2 --> VPC 3 --> VPC 4 THEN CONNCECT VPC 4 --> VPC 1 --> VPC 3 AND VPC 2 --> 4. So in total there will be 6 peering
 connections for 4 VPCs. While this doesn't seem like much, it can become very difficult and complex to manage as more VPCs are peered. Below is a diagram 
 for reference:
 
